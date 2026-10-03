@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Neki - Giày thể thao chính hãng</title>
+<meta name="description" content="Neki - giày chạy bộ, giày thể thao và giày thời trang cho nam, nữ và trẻ em.">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#111;--bg:#fff;--grey:#f1f1f1;--mid:#707072;--line:#e0e0e0}
+*{box-sizing:border-box;margin:0}
+body{font-family:Barlow,system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.5}
+a{color:inherit;text-decoration:none}
+a:focus-visible,button:focus-visible{outline:3px solid #1151ff;outline-offset:2px}
+.disp{font-family:"Barlow Condensed","Arial Narrow",sans-serif;font-weight:800;text-transform:uppercase;line-height:.92;letter-spacing:-.01em}
+.util{background:var(--grey);font-size:.8rem;padding:6px 24px;display:flex;justify-content:space-between}
+header{display:flex;align-items:center;justify-content:space-between;padding:12px 24px;position:sticky;top:0;background:#fff;z-index:5;border-bottom:1px solid var(--line)}
+.logo{font-size:2rem}
+nav{display:flex;gap:28px;font-weight:600}
+nav a:hover{border-bottom:2px solid var(--ink)}
+.tools{display:flex;gap:16px;align-items:center}
+.search{background:var(--grey);border:0;border-radius:24px;padding:9px 18px;font:inherit;width:170px}
+.cart{background:none;border:0;font:inherit;font-weight:600;cursor:pointer}
+.promo{text-align:center;padding:14px;font-weight:600;background:var(--grey);border-top:1px solid #fff}
+.hero{background:#e5e5e5;position:relative;overflow:hidden;min-height:540px;display:grid;align-items:end}
+.hero svg{position:absolute;right:-4%;top:6%;width:68%;max-width:900px;transform:rotate(-12deg)}
+.hero .txt{position:relative;padding:48px 24px 56px;max-width:720px}
+.hero h1{font-size:clamp(3.4rem,10vw,8rem);margin-bottom:18px}
+.hero p{font-weight:500;max-width:26em;margin-bottom:24px}
+.btn{display:inline-block;background:var(--ink);color:#fff;border:0;border-radius:30px;padding:12px 26px;font:inherit;font-weight:600;cursor:pointer}
+.btn:hover{background:#444}
+.btn.w{background:#fff;color:var(--ink)}
+.sec{padding:48px 24px}
+.sec h2{font-size:2rem;margin-bottom:20px;font-family:"Barlow Condensed",sans-serif;font-weight:700}
+.row{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px}
+.card .img{background:var(--grey);aspect-ratio:1;display:grid;place-items:center;overflow:hidden}
+.card svg{width:92%}
+.card h3{font-size:1rem;font-weight:600;margin-top:10px}
+.card .cat{color:var(--mid)}
+.card .price{font-weight:600;margin:6px 0 10px}
+.card button{border:1.5px solid var(--ink);background:#fff;border-radius:24px;padding:7px 18px;font:inherit;font-weight:600;cursor:pointer}
+.card button:hover{background:var(--ink);color:#fff}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
+.tile{min-height:380px;display:flex;flex-direction:column;justify-content:flex-end;align-items:flex-start;padding:28px;gap:14px}
+.tile h3{font-size:3rem}
+.band{background:var(--ink);color:#fff;text-align:center;padding:72px 24px}
+.band h2{font-size:clamp(2.6rem,7vw,5.5rem);margin-bottom:20px}
+.band p{max-width:30em;margin:0 auto 24px;color:#ccc}
+footer{background:var(--ink);color:#fff;border-top:1px solid #333;padding:40px 24px 24px}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:28px}
+footer h4{margin-bottom:10px}
+footer a{display:block;color:#aaa;font-size:.9rem;padding:3px 0}
+footer a:hover{color:#fff}
+.copy{color:#888;font-size:.8rem;margin-top:32px}
+@media(max-width:720px){nav{display:none}.search{width:110px}.hero svg{width:110%;top:0}}
+@media(prefers-reduced-motion:no-preference){.hero svg{animation:in .9s ease-out both}@keyframes in{from{transform:translateX(12%) rotate(-12deg);opacity:0}}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="shoe" viewBox="0 0 400 200">
+    <path d="M18 138c0-12 6-18 16-20l58-12c14-3 24-12 34-26l10-14c5-6 14-6 20-1 12 12 28 20 46 24l82 18c22 5 38 14 52 28 8 8 4 18-8 18H34c-10 0-16-4-16-13z" fill="currentColor"/>
+    <path d="M18 138h366v22c0 8-6 14-14 14H36c-10 0-18-6-18-16z" fill="#fff" stroke="#111" stroke-width="4"/>
+    <path d="M150 80l26 20M174 66l26 20M198 60l24 18" stroke="#fff" stroke-width="5" stroke-linecap="round"/>
+  </symbol>
+</svg>
+
+<div class="util"><span>Giao hàng miễn phí cho đơn từ 1.000.000đ</span><span>Trợ giúp · Theo dõi đơn hàng · Đăng nhập</span></div>
+<header>
+  <a href="#" class="logo disp" aria-label="Neki - Trang chủ">Neki</a>
+  <nav aria-label="Danh mục chính">
+    <a href="#moi">Mới ra mắt</a><a href="#danh-muc">Nam</a><a href="#danh-muc">Nữ</a><a href="#danh-muc">Trẻ em</a><a href="#giam-gia">Giảm giá</a>
+  </nav>
+  <div class="tools">
+    <input class="search" type="search" placeholder="Tìm kiếm" aria-label="Tìm kiếm">
+    <button class="cart" id="cart">Giỏ hàng (0)</button>
+  </div>
+</header>
+<div class="promo">Giảm đến 30% giày chạy bộ mùa mới. <a href="#giam-gia"><u>Xem ngay</u></a></div>
+
+<section class="hero">
+  <svg viewBox="0 0 400 200" style="color:#c6f000" role="img" aria-label="Giày Neki Air Run"><use href="#shoe"/></svg>
+  <div class="txt">
+    <h1 class="disp">Chạy nhanh.<br>Đi xa hơn.</h1>
+    <p>Neki Air Run 2026: đế đệm nhẹ hơn 20%, ôm chân và bền cho mọi quãng đường.</p>
+    <a class="btn" href="#moi">Mua ngay</a>
+  </div>
+</section>
+
+<section class="sec" id="moi">
+  <h2>Mới ra mắt</h2>
+  <div class="row">
+    <article class="card"><div class="img"><svg viewBox="0 0 400 200" style="color:#1151ff"><use href="#shoe"/></svg></div><h3>Neki Air Run</h3><div class="cat">Giày chạy bộ nam</div><div class="price">2.890.000đ</div><button>Thêm vào giỏ</button></article>
+    <article class="card"><div class="img"><svg viewBox="0 0 400 200" style="color:#e8412c"><use href="#shoe"/></svg></div><h3>Neki Court Pro</h3><div class="cat">Giày thể thao nữ</div><div class="price">2.450.000đ</div><button>Thêm vào giỏ</button></article>
+    <article class="card"><div class="img"><svg viewBox="0 0 400 200" style="color:#111"><use href="#shoe"/></svg></div><h3>Neki Street 90</h3><div class="cat">Giày thời trang unisex</div><div class="price">1.990.000đ</div><button>Thêm vào giỏ</button></article>
+    <article class="card"><div class="img"><svg viewBox="0 0 400 200" style="color:#2ba36b"><use href="#shoe"/></svg></div><h3>Neki Trail Max</h3><div class="cat">Giày chạy địa hình</div><div class="price">3.250.000đ</div><button>Thêm vào giỏ</button></article>
+  </div>
+</section>
+
+<section class="sec" id="danh-muc">
+  <h2>Mua sắm theo danh mục</h2>
+  <div class="tiles">
+    <a class="tile" style="background:#dfe3ea" href="#"><h3 class="disp">Nam</h3><span class="btn w">Xem giày nam</span></a>
+    <a class="tile" style="background:#f3dcd6" href="#"><h3 class="disp">Nữ</h3><span class="btn w">Xem giày nữ</span></a>
+    <a class="tile" style="background:#e3f0d2" href="#"><h3 class="disp">Trẻ em</h3><span class="btn w">Xem giày trẻ em</span></a>
+  </div>
+</section>
+
+<section class="band" id="giam-gia">
+  <h2 class="disp">Giảm đến 30%</h2>
+  <p>Giày chạy bộ và giày tập mùa trước, số lượng có hạn. Đăng ký thành viên Neki để nhận thêm 10% cho đơn đầu tiên.</p>
+  <a class="btn w" href="#">Tham gia miễn phí</a>
+</section>
+
+<footer>
+  <div class="cols">
+    <div><h4>Sản phẩm</h4><a href="#">Giày chạy bộ</a><a href="#">Giày thể thao</a><a href="#">Giày thời trang</a></div>
+    <div><h4>Hỗ trợ</h4><a href="#">Hướng dẫn chọn size</a><a href="#">Đổi trả trong 30 ngày</a><a href="#">Liên hệ</a></div>
+    <div><h4>Về Neki</h4><a href="#">Câu chuyện thương hiệu</a><a href="#">Tuyển dụng</a><a href="#">Hệ thống cửa hàng</a></div>
+  </div>
+  <p class="copy">© 2026 Neki. Bảo lưu mọi quyền.</p>
+</footer>
+
+<script>
+var n=0,c=document.getElementById("cart");
+document.querySelectorAll(".card button").forEach(function(b){
+  b.addEventListener("click",function(){n++;c.textContent="Giỏ hàng ("+n+")";b.textContent="Đã thêm";});
+});
+</script>
+</body>
+</html>
